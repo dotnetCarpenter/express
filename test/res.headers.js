@@ -8,7 +8,7 @@ describe('res', function(){
       var app = express();
 
       app.use(function(req, res){
-        res.setHeader('Expires', 'Thu, 01 Dec 1994 16:00:00 GMT').end();
+        res.header('Expires', 'Thu, 01 Dec 1994 16:00:00 GMT').end();
       });
 
       request(app)
